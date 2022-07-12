@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company website template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+                   <!---------Navbar-------------->
+    <section class="contact-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+
+    </section>
+
+    <!---------------------------------About Us------------------------------>
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10848.34004787168!2d-143.6433100791517!3d70.13069554481216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5118b4c239616e05%3A0x42a95e4c23c04751!2sKaktovik%2C%20AK%2C%20USA!5e0!3m2!1sen!2sca!4v1657642379956!5m2!1sen!2sca" width="600" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>2011 Lake Rd, Kaktovik
+                           </h5>
+                           <p> AK 99747, United States</p>
+                    </span>
+                </div>
+
+          
+            <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+19076406513</h5>
+                <p>Monday to saturday, 10am to 6pm</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>abc@def.com</h5>
+                    <p>Email us your query</p>
+                    </span>
+                </div>
+        </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea placeholder="Message" name="message" rows="8" required></textarea>
+                        <button type="submit" class="main-btn co-btn">Send Message</button>
+                    </form>
+               
+            </div>
+        </div>
+    </section>
+   
+
+
+    <!------------------------------------------Footer-------------------------------------------->
+
+    <section class="footer">
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+
+        <p> © Copyright 2022 Auto Dream ltd. All rights reserved.</p>
+
+       
+        </section>
+
+
+    <!--Javascript for menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
